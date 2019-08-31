@@ -62,7 +62,7 @@ img.Dice {
 	width: 300px;
 	height: 300px;
 	top: 10%;
-	left: 30%;
+	margin: 0 auto;
 	opacity: 0.9;
 	color: red;
 }
@@ -72,7 +72,7 @@ img.Dice {
 	width: 70px;
 	height: 70px;
 	top: 45%;
-	left: 46%;
+	left: 45%;
 	background-color: #f6f6f6;
 }
 .centerButton{
@@ -81,7 +81,7 @@ img.Dice {
 	width: 70px;
 	height: 70px;
 	top: 70%;
-	left: 46%;
+	left: 44%;
 	opacity: 0.9;
 }
 .centerButton button {
@@ -89,4 +89,67 @@ img.Dice {
 	border-radius: 5px;
 	width: 70%;
 	background-color: #fff;
+}
+@media(max-width: 500px){
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 2rem;
+	font-style: 'solid';
+}
+.container {
+	position: relative;
+	margin: 20px auto;
+	background-color: #fff;
+	width: 100%;
+	height: 35rem;
+	z-index: 1;
+	text-align: center;
+	padding: 10px;
+}
+.DiceHolder {
+	position: absolute;
+	z-index: 2;
+	width: 30px;
+	height: 30px;
+	top: 45%;
+	margin: 0 auto;
+	background-color: #f6f6f6;
+}
+img.Dice {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 0;
+	border: 1px solid black;
+}
+.centerButton{
+	position: absolute;
+	z-index: 2;
+	width: 60px;
+	height: 60px;
+	top: 70%;
+	left: 42%;
+	text-align: center;
+	margin: 0;
+	opacity: 0.9;
+}
+.centerButton button {
+	margin: 5px auto;
+	border-radius: 5px;
+	width: 70%;
+	background-color: #fff;
+}
+.Winner {
+	position: absolute;
+	z-index: 3;
+	width: 100px;
+	height: 100px;
+	top: 10%;
+	margin: 0 auto;
+	opacity: 0.9;
+	color: red;
+}
 }
